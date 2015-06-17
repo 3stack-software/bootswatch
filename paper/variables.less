@@ -10,7 +10,7 @@
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              #212121;
-@gray:                   #666;
+@gray:                   #333;
 @gray-light:             #bbb;
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
@@ -26,7 +26,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #f1f1f1;
 //** Global text color on `<body>`.
 @text-color:            @gray;
 
@@ -68,7 +68,7 @@
 @headings-font-family:    inherit;
 @headings-font-weight:    400;
 @headings-line-height:    1.1;
-@headings-color:          #444;
+@headings-color:          #333;
 
 
 //== Iconography
@@ -181,14 +181,14 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       transparent;
+@input-bg:                       #fff;
 //** `<input disabled>` background color
-@input-bg-disabled:              transparent;
+@input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   transparent;
+@input-border:                   #ccc;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -219,7 +219,7 @@
 @legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
-@input-group-addon-bg:           transparent;
+@input-group-addon-bg:           @gray-lighter;
 //** Border color for textual input addons
 @input-group-addon-border-color: @input-border;
 
@@ -390,17 +390,17 @@
 
 //=== Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         @brand-primary;
-@navbar-inverse-border:                     transparent;
+@navbar-inverse-color:                      #fff;
+@navbar-inverse-bg:                         #263746;
+@navbar-inverse-border:                     #385167;
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 lighten(@brand-primary, 30%);
-@navbar-inverse-link-hover-color:           #fff;
-@navbar-inverse-link-hover-bg:              transparent;
-@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
-@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-color:                 @navbar-inverse-color;
+@navbar-inverse-link-hover-color:           @navbar-inverse-color;
+@navbar-inverse-link-hover-bg:              lighten(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-active-color:          @navbar-inverse-color;
+@navbar-inverse-link-active-bg:             lighten(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        @gray-light;
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
@@ -550,12 +550,12 @@
 //** Popover arrow width
 @popover-arrow-width:                 10px;
 //** Popover arrow color
-@popover-arrow-color:                 @popover-bg;
+@popover-arrow-color:                 #ebebeb;
 
 //** Popover outer arrow width
 @popover-arrow-outer-width:           (@popover-arrow-width + 1);
 //** Popover outer arrow color
-@popover-arrow-outer-color:           fadein(@popover-border-color, 7.5%);
+@popover-arrow-outer-color:           #e1e1e1;
 //** Popover outer arrow fallback color
 @popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
 
@@ -693,9 +693,9 @@
 //** Text color for content within disabled list items
 @list-group-disabled-text-color: @list-group-disabled-color;
 
-@list-group-link-color:         #555;
+@list-group-link-color:         #333;
 @list-group-link-hover-color:   @list-group-link-color;
-@list-group-link-heading-color: #333;
+@list-group-link-heading-color: #555;
 
 
 //== Panels
